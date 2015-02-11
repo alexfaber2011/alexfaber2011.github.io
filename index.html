@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html ng-app="theHub">
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>AngularJS Example - The Hub</title>
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css" />
+</head>
+<body>
+    <div class="container">
+        <h1>The Hub - AngularJS App</h1>
+        <hr />
+        <div class="row" ng-controller="simpleController">
+            <div class="col-md-12">
+                <h3>Simple Controller Example</h3>
+                <h5>The s/seven/six dwarves</h5>
+            </div>
+            <div class="col-md-4" ng-repeat="dwarf in dwarfs">
+                <div class="well" >
+                    {{dwarf}}
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
