@@ -10,4 +10,8 @@ app.config(['$routeProvider', function($routeProvider){
             templateUrl: 'views/home.html',
             controller: 'SimpleCtrl'
         })
+        .when('/button', {
+            templateUrl: 'views/buttonCount.html',
+            controller: 'ButtonCountCtrl'
+        })
 }]);

@@ -9,20 +9,13 @@
     <div class="container">
         <h1>The Hub - AngularJS App</h1>
         <hr />
-        <div class="row" ng-controller="simpleController">
-            <div class="col-md-12">
-                <h3>Simple Controller Example</h3>
-                <h5>The s/seven/six dwarves</h5>
-            </div>
-            <div class="col-md-4" ng-repeat="dwarf in dwarfs">
-                <div class="well" >
-                    {{dwarf}}
-                </div>
-            </div>
-        </div>
+        <div ng-view></div>
     </div>
     <script src="bower_components/angular/angular.js"></script>
     <script src="app.js"></script>
+    <script src="bower_components/angular-route/angular-route.js"></script>
     <script src="controllers/SimpleCtrl.js"></script>
+    <script src="controllers/ButtonCountCtrl.js"></script>
+    <script src="services/buttonClickCountFactory.js"></script>
 </body>
 </html>
