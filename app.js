@@ -1,7 +1,7 @@
 /**
  * Created by alexfaber on 2/11/15.
  */
-app = angular.module("theHub", ['ngRoute']);
+app = angular.module("theHub", ['ngRoute', 'ngResource']);
 
 //Routing
 app.config(['$routeProvider', function($routeProvider){
@@ -13,5 +13,9 @@ app.config(['$routeProvider', function($routeProvider){
         .when('/button', {
             templateUrl: 'views/buttonCount.html',
             controller: 'ButtonCountCtrl'
+        })
+        .when('/rest', {
+            templateUrl: 'views/rest.html',
+            controller: 'RestCtrl'
         })
 }]);

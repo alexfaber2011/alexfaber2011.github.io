@@ -22,19 +22,25 @@
             <ul class="nav navbar-nav navbar-right">
                 <li><a href="#/button">Service vs. Controller</a></li>
             </ul>
+            <ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#/rest">REST</a></li>
+                </ul>
+            </ul>
         </div>
     </div><!-- /.container-fluid -->
 </nav>
     <div class="container">
-        <h1>The Hub - AngularJS App</h1>
-        <hr />
         <div ng-view></div>
     </div>
     <script src="bower_components/angular/angular.js"></script>
     <script src="app.js"></script>
     <script src="bower_components/angular-route/angular-route.js"></script>
+    <script src="bower_components/angular-resource/angular-resource.min.js"></script>
     <script src="controllers/SimpleCtrl.js"></script>
     <script src="controllers/ButtonCountCtrl.js"></script>
+    <script src="controllers/RestCtrl.js"></script>
     <script src="services/buttonClickCountFactory.js"></script>
+    <script src="services/restService.js"></script>
 </body>
 </html>
