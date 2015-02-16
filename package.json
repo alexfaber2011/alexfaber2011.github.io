@@ -1,0 +1,25 @@
+{
+  "name": "angularExample",
+  "version": "1.0.0",
+  "description": "Simple AngularJS example for The Hub",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/alexfaber2011/theHubAngularJSExample.git"
+  },
+  "author": "Alex Faber",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/alexfaber2011/theHubAngularJSExample/issues"
+  },
+  "homepage": "https://github.com/alexfaber2011/theHubAngularJSExample",
+  "dependencies": {
+    "bower": "0.6.x"
+  },
+  "scripts": {
+    "postinstall": "./node_modules/bower/bin/bower install"
+  }
+}
